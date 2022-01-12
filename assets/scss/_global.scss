@@ -1,0 +1,133 @@
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: $dpink;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  transition: all 300ms ease-in-out;
+  &:hover {
+    background-color: orange;
+  }
+}
+
+body,
+html {
+  font-size: 11pt;
+  font-family: $opens;
+}
+h1 {
+  font-weight: 700;
+  font-size: 2.62rem;
+}
+h2 {
+  font-weight: 700;
+  font-size: 1.62rem;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: $pink;
+
+  .burger {
+    font-size: 2rem;
+  }
+
+  .headeritems {
+    margin: 0 1rem;
+
+    a {
+      text-decoration: none;
+      color: $dpink;
+    }
+    font-weight: 700;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    justify-content: space-between;
+
+    .menus {
+      transition: all 300ms ease-in-out;
+      .block {
+        background-color: $dpink;
+        color: $pink;
+        border-radius: 10px;
+      }
+
+      a {
+        margin: 0 20px;
+        padding: 5px 15px;
+      }
+    }
+    .burger {
+      cursor: pointer;
+    }
+  }
+}
+
+.parents {
+  background-color: $blue;
+  height: 100vh;
+  .container {
+    // background-color: white;
+    text-align: center;
+    padding: 20vh 20vw;
+    h2 {
+      color: $dpink;
+    }
+    .contact {
+      padding-top: 10pt;
+      .click {
+        cursor: pointer;
+        display: block;
+        color: $dpink;
+        text-decoration: none;
+        background-color: $pink;
+        margin: 10pt;
+        padding: 10pt;
+        font-weight: 700;
+        border-radius: 10px;
+        transition: all 300ms ease-in-out;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.12);
+        }
+      }
+    }
+
+    .qris {
+      background-color: $dpink;
+      position: fixed;
+      top: 45px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      padding: 10pt;
+      img {
+        height: 100%;
+      }
+      &.open {
+        animation: popup 300ms forwards;
+      }
+
+      &.close {
+        animation: popout 300ms forwards;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $dpink;
+  color: $pink;
+  padding: 10pt 10pt;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
